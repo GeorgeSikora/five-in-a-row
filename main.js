@@ -95,6 +95,8 @@ async function run()
         */
     }
 
+    checkStatus(userToken, gameToken);
+
     console.log('Playing first round...');
     var playRes = await play(userToken, gameToken, getRandomArbitrary(-5, 5), getRandomArbitrary(-5, 5));
     console.log(`Played first round: ${playRes.played}`);
