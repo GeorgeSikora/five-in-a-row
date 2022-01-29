@@ -61,14 +61,19 @@ class View {
 
   handleBoardClick(column, row) {
     const { eventHub, canvas, board } = this;
+
+    console.log('board_click');
+
     eventHub.emit('board_click', column, row);
   }
 
   addNewRoundClickListener(listener) {
+    console.log('new_round_click');
     this.eventHub.on('new_round_click', listener);
   }
 
   handleNewRoundBtnClick() {
+    console.log('new_round_click');
     this.eventHub.emit('new_round_click');
   }
 

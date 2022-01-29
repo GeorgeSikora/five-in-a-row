@@ -23,6 +23,9 @@ class GoBoard {
     this.lineLength = this.width;
 
     ctx.canvas.addEventListener('click', (event) => {
+      //return;
+
+      console.log(event);
       this.handleCellClick.call(this, event);
     });
   }
@@ -69,6 +72,9 @@ class GoBoard {
 
   addStone(column, row, type) {
     const { ctx, stoneSize, stoneLineWidth, circleStoneColor, crossStoneColor } = this;
+
+    console.log(`adding stone to column: ${column} row: ${row}`);
+
     const { x, y } = this.transformToXY(column, row);
 
     const stoneParams = {

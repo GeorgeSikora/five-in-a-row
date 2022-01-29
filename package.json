@@ -17,5 +17,9 @@
     "setupFiles": [
       "./preprocessor.js"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "eventsource": "^1.1.0"
   }
 }

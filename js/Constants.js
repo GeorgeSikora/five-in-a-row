@@ -2,12 +2,11 @@
  * Created by Xin on 12/05/2017.
  */
 
-
 const Constants = {
-  SIZE: 15,
-  CELL_SIZE: 38,
-  STONE_SIZE: 28,
-  STONE_LINE_WITH: 4,
+  SIZE: 60,
+  CELL_SIZE: 9,
+  STONE_SIZE: 6,
+  STONE_LINE_WITH: 3,
   BOARD_LINE_WIDTH: 1,
 
   BOARD_BACKGROUND_COLOR: '#efefcd',

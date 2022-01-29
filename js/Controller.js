@@ -11,10 +11,12 @@ class Controller {
       id: 'o',
     });
     this.playerII = new Master({
+      level: 'easy',
       id: 'x',
       evaluator: this.evaluator,
       opponentId: this.playerI.id,
     });
+    this.evaluator.setDepth(1);
   }
 
   init() {
@@ -41,11 +43,16 @@ class Controller {
 
     board.setCurrentPlayer(playerI);
 
+    console.log('New round!');
+
     // board.setCurrentPlayer(playerII);
     // playerII.move(7, 7);
   }
 
   turnover(player) {
+
+    console.log('turnover..');
+
     const { view, board, playerI, playerII } = this;
     const nextPlayer = player === playerI ? playerII : playerI;
     board.setCurrentPlayer(nextPlayer);
@@ -56,6 +63,9 @@ class Controller {
   }
 
   handleMoved(point) {
+
+    console.log('handleMoved ', point);
+
     const self = this;
     const { view, board } = this;
     const { column, row, playerId } = point;

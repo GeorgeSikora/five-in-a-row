@@ -1,0 +1,16 @@
+/**
+ * Created by Xin on 12/05/2017.
+ */
+
+ module.exports = {
+  SIZE: 60,
+  CELL_SIZE: 9,
+  STONE_SIZE: 6,
+  STONE_LINE_WITH: 3,
+  BOARD_LINE_WIDTH: 1,
+
+  BOARD_BACKGROUND_COLOR: '#efefcd',
+  BOARD_LINE_COLOR: '#000000',
+  CIRCLE_STONE_COLOR: '#001f90',
+  CROSS_STONE_COLOR: '#b00000',
+};

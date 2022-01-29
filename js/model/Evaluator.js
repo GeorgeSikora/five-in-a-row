@@ -35,8 +35,8 @@ class Evaluator {
     this.depth = depth;
   }
 
-
   evaluatePoints(points, playerId, opponentId) {
+
     let totalValue = 0;
     for (let i = 0; i < points.length; i++) {
       for (let j = 0; j < points[i].length; j++) {
@@ -47,10 +47,12 @@ class Evaluator {
         }
       }
     }
+
     return totalValue;
   }
 
   evaluatePoint(points, row, column, playerId) {
+
     let totalValue = 0;
     //  direction: -
     let pattern = Evaluator.generatePattern(points, row, column, 0, 1, playerId);
@@ -118,7 +120,6 @@ class Evaluator {
     if (oooo.length > 0) {
       return oooo;
     }
-
 
     if (ooo.length > 0) {
       return ooo;
